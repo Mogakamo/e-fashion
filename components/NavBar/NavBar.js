@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar, ToolBar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core'
+import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core'
 import { ShoppingCart } from '@material-ui/icons'
 import Image from 'next/image'
 
@@ -12,8 +12,8 @@ const NavBar = () => {
 
     return (
         <>
-            <AppBar position="fixed" className={classses.appBar} color="inherit">
-                <ToolBar>
+            <AppBar position="fixed" className={classes.appBar} color="inherit">
+                <Toolbar>
                     <Typography variant="h6" className={classes.title} color="inherit">
                         <Image src={logo} alt="logo" height="15px" className={classes.image} />
                         E FASHION
@@ -26,7 +26,7 @@ const NavBar = () => {
                             </Badge>
                         </IconButton>
                     </div>
-                </ToolBar>
+                </Toolbar>
             </AppBar>
         </>
     )
