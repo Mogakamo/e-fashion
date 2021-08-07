@@ -1,5 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import Product from "./product/product";
 
 const products = [
     {id: 1, name: 'Shoes', description: 'Running Shoes'},
