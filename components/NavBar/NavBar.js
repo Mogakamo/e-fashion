@@ -5,7 +5,11 @@ import Image from 'next/image'
 
 import logo from '../../public/favicon.ico'
 
+import useStyles from './styles'
+
 const NavBar = () => {
+    const classes = useStyles()
+
     return (
         <>
             <AppBar position="fixed" className={classses.appBar} color="inherit">
