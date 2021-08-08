@@ -5,10 +5,11 @@ import { commerce } from '../lib/commerce'
 
 
 const Home = () => {
+  
   const [products, setProducts] = useState([])
 
   const fetchProducts = async() => {
-     const {data} = await commerce.products.list()
+     const {data: products } = await commerce.products.list()
      
      setProducts(data)
   }
@@ -21,9 +22,10 @@ const Home = () => {
   return (
     <div>
        <NavBar/>
-      <Products />    
+      <Products products={products} />    
     </div>
   )
 }
 
 export default Home
+
