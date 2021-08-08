@@ -4,7 +4,7 @@ import Product from "./product/product";
 
 import useStyles from './styles'
 
-const Products = ({ products }) => {
+const Products = ({ products, onAddToCart }) => {
     const classes = useStyles()
 
     return (

@@ -13,14 +13,20 @@ export async function getStaticProps() {
   };
 }
 
+
+
 const Home = ({products, cart}) => {
-  
+  const handleAddToCart = async (productId, quantity) => {
+    const item = await commerce.cart.add(productId, quantity)
+  }  
+  console.log(products)
+  console.log(cart)
   return (
     <div>
        <NavBar/>
-      <Products products={products} />   
+      <Products products={products} onAddToCart={handleAddToCart} />   
 
-      console.log(cart) 
+       
     </div>
   )
 }
