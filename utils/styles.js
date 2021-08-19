@@ -9,12 +9,22 @@ const useStyles = makeStyles ({
         },
     },
 
+    brand: {
+        fontWeight: 'bold',
+        fontSize: '1.5rem',
+    },
+
+    grow: {
+        flexGrow: 1,
+    },
+
     main: {
         minHeight: '100vh',
     },
 
     footer: {
         textAlign: 'right',
+        borderTop: 10,
     },
 })
 
